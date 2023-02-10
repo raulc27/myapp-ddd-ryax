@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "myapp-ryax-ddd"
+version = "0.1.0"
+description = ""
+authors = ["Raul Castro"]
+license = "GPL"
+readme = "README.md"
+packages = [{include = "myapp_ryax_ddd"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
