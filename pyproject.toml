@@ -10,7 +10,11 @@ packages = [{include = "myapp_ryax_ddd"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 dependency-injector = "^4.41.0"
+fastapi = "^0.91.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
 
 [build-system]
 requires = ["poetry-core"]

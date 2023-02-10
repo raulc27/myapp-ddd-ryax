@@ -19,3 +19,8 @@ class TodoService:
 
     def get_all(self, search: Optional[str] = None) -> list[TodoEntry]:
         return self.todo_repository.get_all(search)
+
+
+# With this test, we find out that the repository does not open the files in "write in bytes" mode 
+# but in "read in utf-8" mode which is the default in Python. So I've added the mode="wb" in my add function and 
+# the mode="rb" in my get function
